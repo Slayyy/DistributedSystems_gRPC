@@ -1,1 +1,8792 @@
-{"Patients":null,"Doctors":null,"Technicians":null,"MedTests":null}
+{
+  "Patients": {
+    "2": {
+      "person": {
+        "id": 2,
+        "name": "Patient1"
+      }
+    }
+  },
+  "Doctors": {
+    "1": {
+      "person": {
+        "id": 1,
+        "name": "Doctor1"
+      }
+    }
+  },
+  "Technicians": {
+    "3": {
+      "person": {
+        "id": 3,
+        "name": "Tech1"
+      }
+    }
+  },
+  "MedTests": {
+    "1": {
+      "id": 1,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "2": {
+      "id": 2,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "3": {
+      "id": 3,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "4": {
+      "id": 4,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "5": {
+      "id": 5,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "6": {
+      "id": 6,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "7": {
+      "id": 7,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "8": {
+      "id": 8,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "9": {
+      "id": 9,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "10": {
+      "id": 10,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "11": {
+      "id": 11,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "12": {
+      "id": 12,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "13": {
+      "id": 13,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "14": {
+      "id": 14,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "15": {
+      "id": 15,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "16": {
+      "id": 16,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "17": {
+      "id": 17,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "18": {
+      "id": 18,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "19": {
+      "id": 19,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "20": {
+      "id": 20,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "21": {
+      "id": 21,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "22": {
+      "id": 22,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "23": {
+      "id": 23,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "24": {
+      "id": 24,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "25": {
+      "id": 25,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "26": {
+      "id": 26,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "27": {
+      "id": 27,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "28": {
+      "id": 28,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "29": {
+      "id": 29,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "30": {
+      "id": 30,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "31": {
+      "id": 31,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "32": {
+      "id": 32,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "33": {
+      "id": 33,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "34": {
+      "id": 34,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "35": {
+      "id": 35,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "36": {
+      "id": 36,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "37": {
+      "id": 37,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "38": {
+      "id": 38,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "39": {
+      "id": 39,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "40": {
+      "id": 40,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "41": {
+      "id": 41,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "42": {
+      "id": 42,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "43": {
+      "id": 43,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "44": {
+      "id": 44,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "45": {
+      "id": 45,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "46": {
+      "id": 46,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "47": {
+      "id": 47,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "48": {
+      "id": 48,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "49": {
+      "id": 49,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "50": {
+      "id": 50,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "51": {
+      "id": 51,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "52": {
+      "id": 52,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "53": {
+      "id": 53,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "54": {
+      "id": 54,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "55": {
+      "id": 55,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "56": {
+      "id": 56,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "57": {
+      "id": 57,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "58": {
+      "id": 58,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "59": {
+      "id": 59,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "60": {
+      "id": 60,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "61": {
+      "id": 61,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "62": {
+      "id": 62,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "63": {
+      "id": 63,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "64": {
+      "id": 64,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "65": {
+      "id": 65,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "66": {
+      "id": 66,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "67": {
+      "id": 67,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "68": {
+      "id": 68,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "69": {
+      "id": 69,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "70": {
+      "id": 70,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "71": {
+      "id": 71,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "72": {
+      "id": 72,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "73": {
+      "id": 73,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "74": {
+      "id": 74,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "75": {
+      "id": 75,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "76": {
+      "id": 76,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "77": {
+      "id": 77,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "78": {
+      "id": 78,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "79": {
+      "id": 79,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "80": {
+      "id": 80,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "81": {
+      "id": 81,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "82": {
+      "id": 82,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "83": {
+      "id": 83,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "84": {
+      "id": 84,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "85": {
+      "id": 85,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "86": {
+      "id": 86,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "87": {
+      "id": 87,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "88": {
+      "id": 88,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "89": {
+      "id": 89,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "90": {
+      "id": 90,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "91": {
+      "id": 91,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "92": {
+      "id": 92,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "93": {
+      "id": 93,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "94": {
+      "id": 94,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "95": {
+      "id": 95,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "96": {
+      "id": 96,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "97": {
+      "id": 97,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "98": {
+      "id": 98,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "99": {
+      "id": 99,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "100": {
+      "id": 100,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "101": {
+      "id": 101,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "102": {
+      "id": 102,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "103": {
+      "id": 103,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "104": {
+      "id": 104,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "105": {
+      "id": 105,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "106": {
+      "id": 106,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "107": {
+      "id": 107,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "108": {
+      "id": 108,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "109": {
+      "id": 109,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "110": {
+      "id": 110,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "111": {
+      "id": 111,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "112": {
+      "id": 112,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "113": {
+      "id": 113,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "114": {
+      "id": 114,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "115": {
+      "id": 115,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "116": {
+      "id": 116,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "117": {
+      "id": 117,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "118": {
+      "id": 118,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "119": {
+      "id": 119,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "120": {
+      "id": 120,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "121": {
+      "id": 121,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "122": {
+      "id": 122,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "123": {
+      "id": 123,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "124": {
+      "id": 124,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "125": {
+      "id": 125,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "126": {
+      "id": 126,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "127": {
+      "id": 127,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "128": {
+      "id": 128,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "129": {
+      "id": 129,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "130": {
+      "id": 130,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "131": {
+      "id": 131,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "132": {
+      "id": 132,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "133": {
+      "id": 133,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "134": {
+      "id": 134,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "135": {
+      "id": 135,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "136": {
+      "id": 136,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "137": {
+      "id": 137,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "138": {
+      "id": 138,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "139": {
+      "id": 139,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "140": {
+      "id": 140,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "141": {
+      "id": 141,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "142": {
+      "id": 142,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "143": {
+      "id": 143,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "144": {
+      "id": 144,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "145": {
+      "id": 145,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "146": {
+      "id": 146,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "147": {
+      "id": 147,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "148": {
+      "id": 148,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "149": {
+      "id": 149,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "150": {
+      "id": 150,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "151": {
+      "id": 151,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "152": {
+      "id": 152,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "153": {
+      "id": 153,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "154": {
+      "id": 154,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "155": {
+      "id": 155,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "156": {
+      "id": 156,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "157": {
+      "id": 157,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "158": {
+      "id": 158,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "159": {
+      "id": 159,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "160": {
+      "id": 160,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "161": {
+      "id": 161,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "162": {
+      "id": 162,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "163": {
+      "id": 163,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "164": {
+      "id": 164,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "165": {
+      "id": 165,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "166": {
+      "id": 166,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "167": {
+      "id": 167,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "168": {
+      "id": 168,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "169": {
+      "id": 169,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "170": {
+      "id": 170,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "171": {
+      "id": 171,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "172": {
+      "id": 172,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "173": {
+      "id": 173,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "174": {
+      "id": 174,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "175": {
+      "id": 175,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "176": {
+      "id": 176,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "177": {
+      "id": 177,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "178": {
+      "id": 178,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "179": {
+      "id": 179,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "180": {
+      "id": 180,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "181": {
+      "id": 181,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "182": {
+      "id": 182,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "183": {
+      "id": 183,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "184": {
+      "id": 184,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "185": {
+      "id": 185,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "186": {
+      "id": 186,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "187": {
+      "id": 187,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "188": {
+      "id": 188,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "189": {
+      "id": 189,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "190": {
+      "id": 190,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "191": {
+      "id": 191,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "192": {
+      "id": 192,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "193": {
+      "id": 193,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "194": {
+      "id": 194,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "195": {
+      "id": 195,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "196": {
+      "id": 196,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "197": {
+      "id": 197,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "198": {
+      "id": 198,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "199": {
+      "id": 199,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "200": {
+      "id": 200,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "201": {
+      "id": 201,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "202": {
+      "id": 202,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "203": {
+      "id": 203,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "204": {
+      "id": 204,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "205": {
+      "id": 205,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "206": {
+      "id": 206,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "207": {
+      "id": 207,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "208": {
+      "id": 208,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "209": {
+      "id": 209,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "210": {
+      "id": 210,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "211": {
+      "id": 211,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "212": {
+      "id": 212,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "213": {
+      "id": 213,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "214": {
+      "id": 214,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "215": {
+      "id": 215,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "216": {
+      "id": 216,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "217": {
+      "id": 217,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "218": {
+      "id": 218,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "219": {
+      "id": 219,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "220": {
+      "id": 220,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "221": {
+      "id": 221,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "222": {
+      "id": 222,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "223": {
+      "id": 223,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "224": {
+      "id": 224,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "225": {
+      "id": 225,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "226": {
+      "id": 226,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "227": {
+      "id": 227,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "228": {
+      "id": 228,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "229": {
+      "id": 229,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "230": {
+      "id": 230,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "231": {
+      "id": 231,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "232": {
+      "id": 232,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "233": {
+      "id": 233,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "234": {
+      "id": 234,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "235": {
+      "id": 235,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "236": {
+      "id": 236,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "237": {
+      "id": 237,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "238": {
+      "id": 238,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "239": {
+      "id": 239,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "240": {
+      "id": 240,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "241": {
+      "id": 241,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "242": {
+      "id": 242,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "243": {
+      "id": 243,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "244": {
+      "id": 244,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "245": {
+      "id": 245,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "246": {
+      "id": 246,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "247": {
+      "id": 247,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "248": {
+      "id": 248,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "249": {
+      "id": 249,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "250": {
+      "id": 250,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "251": {
+      "id": 251,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "252": {
+      "id": 252,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "253": {
+      "id": 253,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "254": {
+      "id": 254,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "255": {
+      "id": 255,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "256": {
+      "id": 256,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "257": {
+      "id": 257,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "258": {
+      "id": 258,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "259": {
+      "id": 259,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "260": {
+      "id": 260,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "261": {
+      "id": 261,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "262": {
+      "id": 262,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "263": {
+      "id": 263,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "264": {
+      "id": 264,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "265": {
+      "id": 265,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "266": {
+      "id": 266,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "267": {
+      "id": 267,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "268": {
+      "id": 268,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "269": {
+      "id": 269,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "270": {
+      "id": 270,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "271": {
+      "id": 271,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "272": {
+      "id": 272,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "273": {
+      "id": 273,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "274": {
+      "id": 274,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "275": {
+      "id": 275,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "276": {
+      "id": 276,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "277": {
+      "id": 277,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "278": {
+      "id": 278,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "279": {
+      "id": 279,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "280": {
+      "id": 280,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "281": {
+      "id": 281,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "282": {
+      "id": 282,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "283": {
+      "id": 283,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "284": {
+      "id": 284,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "285": {
+      "id": 285,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "286": {
+      "id": 286,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "287": {
+      "id": 287,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "288": {
+      "id": 288,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "289": {
+      "id": 289,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "290": {
+      "id": 290,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "291": {
+      "id": 291,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "292": {
+      "id": 292,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "293": {
+      "id": 293,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "294": {
+      "id": 294,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "295": {
+      "id": 295,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "296": {
+      "id": 296,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "297": {
+      "id": 297,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "298": {
+      "id": 298,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "299": {
+      "id": 299,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "300": {
+      "id": 300,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "301": {
+      "id": 301,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "302": {
+      "id": 302,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "303": {
+      "id": 303,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "304": {
+      "id": 304,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "305": {
+      "id": 305,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "306": {
+      "id": 306,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "307": {
+      "id": 307,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "308": {
+      "id": 308,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "309": {
+      "id": 309,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "310": {
+      "id": 310,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "311": {
+      "id": 311,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "312": {
+      "id": 312,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "313": {
+      "id": 313,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "314": {
+      "id": 314,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "315": {
+      "id": 315,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "316": {
+      "id": 316,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "317": {
+      "id": 317,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "318": {
+      "id": 318,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "319": {
+      "id": 319,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "320": {
+      "id": 320,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "321": {
+      "id": 321,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "322": {
+      "id": 322,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "323": {
+      "id": 323,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "324": {
+      "id": 324,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "325": {
+      "id": 325,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "326": {
+      "id": 326,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "327": {
+      "id": 327,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "328": {
+      "id": 328,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "329": {
+      "id": 329,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "330": {
+      "id": 330,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "331": {
+      "id": 331,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "332": {
+      "id": 332,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "333": {
+      "id": 333,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "334": {
+      "id": 334,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "335": {
+      "id": 335,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "336": {
+      "id": 336,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    },
+    "337": {
+      "id": 337,
+      "patient": {
+        "person": {
+          "id": 2,
+          "name": "Patient1"
+        }
+      },
+      "doctor": {
+        "person": {
+          "id": 1,
+          "name": "Doctor1"
+        }
+      },
+      "technician": {
+        "person": {
+          "id": 3,
+          "name": "Tech1"
+        }
+      },
+      "results": {
+        "ala": "niemakota",
+        "cukier": "0%",
+        "kot": "maale"
+      }
+    }
+  },
+  "PersonCounter": 3,
+  "MedTestCounter": 337
+}

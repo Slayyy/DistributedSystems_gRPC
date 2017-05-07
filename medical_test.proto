@@ -9,49 +9,32 @@ message Person {
 message Patient {
   Person person = 1;
 }
-message Patients {
-  repeated Patient patients = 1;
-}
 
 message Doctor {
   Person person = 1;
 }
 
-message Doctors {
-  repeated Doctor doctors = 1;
-}
-
-message Technican {
+message Technician {
   Person person = 1;
-}
-
-message Technicans {
-  repeated Technican technicans = 1;
 }
 
 message MedicalTest {
   int64 id = 1;
   Patient patient = 2;
   Doctor doctor = 3;
-  Technican technican = 4;
+  Technician technician = 4;
   map<string, string> results = 5;
 }
 
-message MedicalTests {
-  repeated MedicalTest tests = 1;
-}
-
-message AddMedicalTest {
+message NewMedTestRequest {
   int64 doctor = 1;
   int64 patient = 2;
-  int64 technican = 3;
+  int64 technician = 3;
   map<string, string> results = 4;
 }
 
-
-message FilterByIdRequest {
-  int64 id = 1;
-  int64 filterId = 2;
+message FilterEvenId {
+  bool isEven = 1;
 }
 
 message Id {
@@ -62,24 +45,29 @@ message Status {
   string status = 1;
 }
 
+message Empty {
+}
+
 service PatientService {
-  rpc FetchAllResults (Id) returns (stream MedicalTests) {};
-  rpc FetchPersonalData (Id) returns (Patient) {};
+  rpc FetchAllResults (Id) returns (stream MedicalTest) {};
 }
 
 service DoctorService {
-  rpc FetchAllPatients (Id) returns (Patients) {};
-  rpc FetchPatientsForDoctor (Id) returns (Patients) {};
-  rpc FetchResultsWithId (FilterByIdRequest) returns (MedicalTest) {};
+  rpc FetchAllResults (Empty) returns (stream MedicalTest) {};
+  rpc FetchResults (Id) returns (MedicalTest) {};
+  rpc FetchOnIdParity (FilterEvenId) returns (stream MedicalTest) {};
 }
 
-service TechnicanService {
-  rpc AddResults (AddMedicalTest) returns (Status) {};
-  rpc FetchAllResultsForTechnican (Id) returns (MedicalTests) {};
+service TechnicianService {
+  rpc AddResults (NewMedTestRequest) returns (Status) {};
 }
 
-//service PublicService {
-//  rpc FetchAllDoctors (Id) returns (Doctors) {};
-//  rpc FetchAllTechnicans (Id) returns (Technicans) {};
-//}
+service DbService {
+  rpc NewPatient(Person) returns (Patient) {};
+  rpc NewDoctor(Person) returns (Doctor) {};
+  rpc NewTechnician(Person) returns (Technician) {};
 
+  rpc FetchPatients(Empty) returns (stream Patient) {};
+  rpc FetchDoctors(Empty) returns (stream Doctor) {};
+  rpc FetchTechnicians(Empty) returns (stream Technician) {};
+}

@@ -11,23 +11,25 @@ It is generated from these files:
 It has these top-level messages:
 	Person
 	Patient
-	Patients
 	Doctor
-	Doctors
-	Technican
-	Technicans
+	Technician
 	MedicalTest
-	MedicalTests
-	AddMedicalTest
-	FilterByIdRequest
+	NewMedTestRequest
+	FilterEvenId
 	Id
 	Status
+	Empty
 */
 package medical_test
 
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
+
+import (
+	context "golang.org/x/net/context"
+	grpc "google.golang.org/grpc"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -80,22 +82,6 @@ func (m *Patient) GetPerson() *Person {
 	return nil
 }
 
-type Patients struct {
-	Patients []*Patient `protobuf:"bytes,1,rep,name=patients" json:"patients,omitempty"`
-}
-
-func (m *Patients) Reset()                    { *m = Patients{} }
-func (m *Patients) String() string            { return proto.CompactTextString(m) }
-func (*Patients) ProtoMessage()               {}
-func (*Patients) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{2} }
-
-func (m *Patients) GetPatients() []*Patient {
-	if m != nil {
-		return m.Patients
-	}
-	return nil
-}
-
 type Doctor struct {
 	Person *Person `protobuf:"bytes,1,opt,name=person" json:"person,omitempty"`
 }
@@ -103,7 +89,7 @@ type Doctor struct {
 func (m *Doctor) Reset()                    { *m = Doctor{} }
 func (m *Doctor) String() string            { return proto.CompactTextString(m) }
 func (*Doctor) ProtoMessage()               {}
-func (*Doctor) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{3} }
+func (*Doctor) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{2} }
 
 func (m *Doctor) GetPerson() *Person {
 	if m != nil {
@@ -112,66 +98,34 @@ func (m *Doctor) GetPerson() *Person {
 	return nil
 }
 
-type Doctors struct {
-	Doctors []*Doctor `protobuf:"bytes,1,rep,name=doctors" json:"doctors,omitempty"`
-}
-
-func (m *Doctors) Reset()                    { *m = Doctors{} }
-func (m *Doctors) String() string            { return proto.CompactTextString(m) }
-func (*Doctors) ProtoMessage()               {}
-func (*Doctors) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{4} }
-
-func (m *Doctors) GetDoctors() []*Doctor {
-	if m != nil {
-		return m.Doctors
-	}
-	return nil
-}
-
-type Technican struct {
+type Technician struct {
 	Person *Person `protobuf:"bytes,1,opt,name=person" json:"person,omitempty"`
 }
 
-func (m *Technican) Reset()                    { *m = Technican{} }
-func (m *Technican) String() string            { return proto.CompactTextString(m) }
-func (*Technican) ProtoMessage()               {}
-func (*Technican) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{5} }
+func (m *Technician) Reset()                    { *m = Technician{} }
+func (m *Technician) String() string            { return proto.CompactTextString(m) }
+func (*Technician) ProtoMessage()               {}
+func (*Technician) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{3} }
 
-func (m *Technican) GetPerson() *Person {
+func (m *Technician) GetPerson() *Person {
 	if m != nil {
 		return m.Person
 	}
 	return nil
 }
 
-type Technicans struct {
-	Technicans []*Technican `protobuf:"bytes,1,rep,name=technicans" json:"technicans,omitempty"`
-}
-
-func (m *Technicans) Reset()                    { *m = Technicans{} }
-func (m *Technicans) String() string            { return proto.CompactTextString(m) }
-func (*Technicans) ProtoMessage()               {}
-func (*Technicans) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{6} }
-
-func (m *Technicans) GetTechnicans() []*Technican {
-	if m != nil {
-		return m.Technicans
-	}
-	return nil
-}
-
 type MedicalTest struct {
-	Id        int64             `protobuf:"varint,1,opt,name=id" json:"id,omitempty"`
-	Patient   *Patient          `protobuf:"bytes,2,opt,name=patient" json:"patient,omitempty"`
-	Doctor    *Doctor           `protobuf:"bytes,3,opt,name=doctor" json:"doctor,omitempty"`
-	Technican *Technican        `protobuf:"bytes,4,opt,name=technican" json:"technican,omitempty"`
-	Results   map[string]string `protobuf:"bytes,5,rep,name=results" json:"results,omitempty" protobuf_key:"bytes,1,opt,name=key" protobuf_val:"bytes,2,opt,name=value"`
+	Id         int64             `protobuf:"varint,1,opt,name=id" json:"id,omitempty"`
+	Patient    *Patient          `protobuf:"bytes,2,opt,name=patient" json:"patient,omitempty"`
+	Doctor     *Doctor           `protobuf:"bytes,3,opt,name=doctor" json:"doctor,omitempty"`
+	Technician *Technician       `protobuf:"bytes,4,opt,name=technician" json:"technician,omitempty"`
+	Results    map[string]string `protobuf:"bytes,5,rep,name=results" json:"results,omitempty" protobuf_key:"bytes,1,opt,name=key" protobuf_val:"bytes,2,opt,name=value"`
 }
 
 func (m *MedicalTest) Reset()                    { *m = MedicalTest{} }
 func (m *MedicalTest) String() string            { return proto.CompactTextString(m) }
 func (*MedicalTest) ProtoMessage()               {}
-func (*MedicalTest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{7} }
+func (*MedicalTest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{4} }
 
 func (m *MedicalTest) GetId() int64 {
 	if m != nil {
@@ -194,9 +148,9 @@ func (m *MedicalTest) GetDoctor() *Doctor {
 	return nil
 }
 
-func (m *MedicalTest) GetTechnican() *Technican {
+func (m *MedicalTest) GetTechnician() *Technician {
 	if m != nil {
-		return m.Technican
+		return m.Technician
 	}
 	return nil
 }
@@ -208,84 +162,60 @@ func (m *MedicalTest) GetResults() map[string]string {
 	return nil
 }
 
-type MedicalTests struct {
-	Tests []*MedicalTest `protobuf:"bytes,1,rep,name=tests" json:"tests,omitempty"`
+type NewMedTestRequest struct {
+	Doctor     int64             `protobuf:"varint,1,opt,name=doctor" json:"doctor,omitempty"`
+	Patient    int64             `protobuf:"varint,2,opt,name=patient" json:"patient,omitempty"`
+	Technician int64             `protobuf:"varint,3,opt,name=technician" json:"technician,omitempty"`
+	Results    map[string]string `protobuf:"bytes,4,rep,name=results" json:"results,omitempty" protobuf_key:"bytes,1,opt,name=key" protobuf_val:"bytes,2,opt,name=value"`
 }
 
-func (m *MedicalTests) Reset()                    { *m = MedicalTests{} }
-func (m *MedicalTests) String() string            { return proto.CompactTextString(m) }
-func (*MedicalTests) ProtoMessage()               {}
-func (*MedicalTests) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{8} }
+func (m *NewMedTestRequest) Reset()                    { *m = NewMedTestRequest{} }
+func (m *NewMedTestRequest) String() string            { return proto.CompactTextString(m) }
+func (*NewMedTestRequest) ProtoMessage()               {}
+func (*NewMedTestRequest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{5} }
 
-func (m *MedicalTests) GetTests() []*MedicalTest {
-	if m != nil {
-		return m.Tests
-	}
-	return nil
-}
-
-type AddMedicalTest struct {
-	Doctor    int64             `protobuf:"varint,1,opt,name=doctor" json:"doctor,omitempty"`
-	Patient   int64             `protobuf:"varint,2,opt,name=patient" json:"patient,omitempty"`
-	Technican int64             `protobuf:"varint,3,opt,name=technican" json:"technican,omitempty"`
-	Results   map[string]string `protobuf:"bytes,4,rep,name=results" json:"results,omitempty" protobuf_key:"bytes,1,opt,name=key" protobuf_val:"bytes,2,opt,name=value"`
-}
-
-func (m *AddMedicalTest) Reset()                    { *m = AddMedicalTest{} }
-func (m *AddMedicalTest) String() string            { return proto.CompactTextString(m) }
-func (*AddMedicalTest) ProtoMessage()               {}
-func (*AddMedicalTest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{9} }
-
-func (m *AddMedicalTest) GetDoctor() int64 {
+func (m *NewMedTestRequest) GetDoctor() int64 {
 	if m != nil {
 		return m.Doctor
 	}
 	return 0
 }
 
-func (m *AddMedicalTest) GetPatient() int64 {
+func (m *NewMedTestRequest) GetPatient() int64 {
 	if m != nil {
 		return m.Patient
 	}
 	return 0
 }
 
-func (m *AddMedicalTest) GetTechnican() int64 {
+func (m *NewMedTestRequest) GetTechnician() int64 {
 	if m != nil {
-		return m.Technican
+		return m.Technician
 	}
 	return 0
 }
 
-func (m *AddMedicalTest) GetResults() map[string]string {
+func (m *NewMedTestRequest) GetResults() map[string]string {
 	if m != nil {
 		return m.Results
 	}
 	return nil
 }
 
-type FilterByIdRequest struct {
-	Id       int64 `protobuf:"varint,1,opt,name=id" json:"id,omitempty"`
-	FilterId int64 `protobuf:"varint,2,opt,name=filterId" json:"filterId,omitempty"`
+type FilterEvenId struct {
+	IsEven bool `protobuf:"varint,1,opt,name=isEven" json:"isEven,omitempty"`
 }
 
-func (m *FilterByIdRequest) Reset()                    { *m = FilterByIdRequest{} }
-func (m *FilterByIdRequest) String() string            { return proto.CompactTextString(m) }
-func (*FilterByIdRequest) ProtoMessage()               {}
-func (*FilterByIdRequest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{10} }
+func (m *FilterEvenId) Reset()                    { *m = FilterEvenId{} }
+func (m *FilterEvenId) String() string            { return proto.CompactTextString(m) }
+func (*FilterEvenId) ProtoMessage()               {}
+func (*FilterEvenId) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{6} }
 
-func (m *FilterByIdRequest) GetId() int64 {
+func (m *FilterEvenId) GetIsEven() bool {
 	if m != nil {
-		return m.Id
+		return m.IsEven
 	}
-	return 0
-}
-
-func (m *FilterByIdRequest) GetFilterId() int64 {
-	if m != nil {
-		return m.FilterId
-	}
-	return 0
+	return false
 }
 
 type Id struct {
@@ -295,7 +225,7 @@ type Id struct {
 func (m *Id) Reset()                    { *m = Id{} }
 func (m *Id) String() string            { return proto.CompactTextString(m) }
 func (*Id) ProtoMessage()               {}
-func (*Id) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{11} }
+func (*Id) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{7} }
 
 func (m *Id) GetId() int64 {
 	if m != nil {
@@ -311,7 +241,7 @@ type Status struct {
 func (m *Status) Reset()                    { *m = Status{} }
 func (m *Status) String() string            { return proto.CompactTextString(m) }
 func (*Status) ProtoMessage()               {}
-func (*Status) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{12} }
+func (*Status) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{8} }
 
 func (m *Status) GetStatus() string {
 	if m != nil {
@@ -320,61 +250,724 @@ func (m *Status) GetStatus() string {
 	return ""
 }
 
+type Empty struct {
+}
+
+func (m *Empty) Reset()                    { *m = Empty{} }
+func (m *Empty) String() string            { return proto.CompactTextString(m) }
+func (*Empty) ProtoMessage()               {}
+func (*Empty) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{9} }
+
 func init() {
 	proto.RegisterType((*Person)(nil), "Person")
 	proto.RegisterType((*Patient)(nil), "Patient")
-	proto.RegisterType((*Patients)(nil), "Patients")
 	proto.RegisterType((*Doctor)(nil), "Doctor")
-	proto.RegisterType((*Doctors)(nil), "Doctors")
-	proto.RegisterType((*Technican)(nil), "Technican")
-	proto.RegisterType((*Technicans)(nil), "Technicans")
+	proto.RegisterType((*Technician)(nil), "Technician")
 	proto.RegisterType((*MedicalTest)(nil), "MedicalTest")
-	proto.RegisterType((*MedicalTests)(nil), "MedicalTests")
-	proto.RegisterType((*AddMedicalTest)(nil), "AddMedicalTest")
-	proto.RegisterType((*FilterByIdRequest)(nil), "FilterByIdRequest")
+	proto.RegisterType((*NewMedTestRequest)(nil), "NewMedTestRequest")
+	proto.RegisterType((*FilterEvenId)(nil), "FilterEvenId")
 	proto.RegisterType((*Id)(nil), "Id")
 	proto.RegisterType((*Status)(nil), "Status")
+	proto.RegisterType((*Empty)(nil), "Empty")
+}
+
+// Reference imports to suppress errors if they are not otherwise used.
+var _ context.Context
+var _ grpc.ClientConn
+
+// This is a compile-time assertion to ensure that this generated file
+// is compatible with the grpc package it is being compiled against.
+const _ = grpc.SupportPackageIsVersion4
+
+// Client API for PatientService service
+
+type PatientServiceClient interface {
+	FetchAllResults(ctx context.Context, in *Id, opts ...grpc.CallOption) (PatientService_FetchAllResultsClient, error)
+}
+
+type patientServiceClient struct {
+	cc *grpc.ClientConn
+}
+
+func NewPatientServiceClient(cc *grpc.ClientConn) PatientServiceClient {
+	return &patientServiceClient{cc}
+}
+
+func (c *patientServiceClient) FetchAllResults(ctx context.Context, in *Id, opts ...grpc.CallOption) (PatientService_FetchAllResultsClient, error) {
+	stream, err := grpc.NewClientStream(ctx, &_PatientService_serviceDesc.Streams[0], c.cc, "/PatientService/FetchAllResults", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &patientServiceFetchAllResultsClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type PatientService_FetchAllResultsClient interface {
+	Recv() (*MedicalTest, error)
+	grpc.ClientStream
+}
+
+type patientServiceFetchAllResultsClient struct {
+	grpc.ClientStream
+}
+
+func (x *patientServiceFetchAllResultsClient) Recv() (*MedicalTest, error) {
+	m := new(MedicalTest)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+// Server API for PatientService service
+
+type PatientServiceServer interface {
+	FetchAllResults(*Id, PatientService_FetchAllResultsServer) error
+}
+
+func RegisterPatientServiceServer(s *grpc.Server, srv PatientServiceServer) {
+	s.RegisterService(&_PatientService_serviceDesc, srv)
+}
+
+func _PatientService_FetchAllResults_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(Id)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(PatientServiceServer).FetchAllResults(m, &patientServiceFetchAllResultsServer{stream})
+}
+
+type PatientService_FetchAllResultsServer interface {
+	Send(*MedicalTest) error
+	grpc.ServerStream
+}
+
+type patientServiceFetchAllResultsServer struct {
+	grpc.ServerStream
+}
+
+func (x *patientServiceFetchAllResultsServer) Send(m *MedicalTest) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+var _PatientService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "PatientService",
+	HandlerType: (*PatientServiceServer)(nil),
+	Methods:     []grpc.MethodDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "FetchAllResults",
+			Handler:       _PatientService_FetchAllResults_Handler,
+			ServerStreams: true,
+		},
+	},
+	Metadata: "medical_test.proto",
+}
+
+// Client API for DoctorService service
+
+type DoctorServiceClient interface {
+	FetchAllResults(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DoctorService_FetchAllResultsClient, error)
+	FetchResults(ctx context.Context, in *Id, opts ...grpc.CallOption) (*MedicalTest, error)
+	FetchOnIdParity(ctx context.Context, in *FilterEvenId, opts ...grpc.CallOption) (DoctorService_FetchOnIdParityClient, error)
+}
+
+type doctorServiceClient struct {
+	cc *grpc.ClientConn
+}
+
+func NewDoctorServiceClient(cc *grpc.ClientConn) DoctorServiceClient {
+	return &doctorServiceClient{cc}
+}
+
+func (c *doctorServiceClient) FetchAllResults(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DoctorService_FetchAllResultsClient, error) {
+	stream, err := grpc.NewClientStream(ctx, &_DoctorService_serviceDesc.Streams[0], c.cc, "/DoctorService/FetchAllResults", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &doctorServiceFetchAllResultsClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type DoctorService_FetchAllResultsClient interface {
+	Recv() (*MedicalTest, error)
+	grpc.ClientStream
+}
+
+type doctorServiceFetchAllResultsClient struct {
+	grpc.ClientStream
+}
+
+func (x *doctorServiceFetchAllResultsClient) Recv() (*MedicalTest, error) {
+	m := new(MedicalTest)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func (c *doctorServiceClient) FetchResults(ctx context.Context, in *Id, opts ...grpc.CallOption) (*MedicalTest, error) {
+	out := new(MedicalTest)
+	err := grpc.Invoke(ctx, "/DoctorService/FetchResults", in, out, c.cc, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *doctorServiceClient) FetchOnIdParity(ctx context.Context, in *FilterEvenId, opts ...grpc.CallOption) (DoctorService_FetchOnIdParityClient, error) {
+	stream, err := grpc.NewClientStream(ctx, &_DoctorService_serviceDesc.Streams[1], c.cc, "/DoctorService/FetchOnIdParity", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &doctorServiceFetchOnIdParityClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type DoctorService_FetchOnIdParityClient interface {
+	Recv() (*MedicalTest, error)
+	grpc.ClientStream
+}
+
+type doctorServiceFetchOnIdParityClient struct {
+	grpc.ClientStream
+}
+
+func (x *doctorServiceFetchOnIdParityClient) Recv() (*MedicalTest, error) {
+	m := new(MedicalTest)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+// Server API for DoctorService service
+
+type DoctorServiceServer interface {
+	FetchAllResults(*Empty, DoctorService_FetchAllResultsServer) error
+	FetchResults(context.Context, *Id) (*MedicalTest, error)
+	FetchOnIdParity(*FilterEvenId, DoctorService_FetchOnIdParityServer) error
+}
+
+func RegisterDoctorServiceServer(s *grpc.Server, srv DoctorServiceServer) {
+	s.RegisterService(&_DoctorService_serviceDesc, srv)
+}
+
+func _DoctorService_FetchAllResults_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(Empty)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(DoctorServiceServer).FetchAllResults(m, &doctorServiceFetchAllResultsServer{stream})
+}
+
+type DoctorService_FetchAllResultsServer interface {
+	Send(*MedicalTest) error
+	grpc.ServerStream
+}
+
+type doctorServiceFetchAllResultsServer struct {
+	grpc.ServerStream
+}
+
+func (x *doctorServiceFetchAllResultsServer) Send(m *MedicalTest) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func _DoctorService_FetchResults_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Id)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DoctorServiceServer).FetchResults(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/DoctorService/FetchResults",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DoctorServiceServer).FetchResults(ctx, req.(*Id))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _DoctorService_FetchOnIdParity_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(FilterEvenId)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(DoctorServiceServer).FetchOnIdParity(m, &doctorServiceFetchOnIdParityServer{stream})
+}
+
+type DoctorService_FetchOnIdParityServer interface {
+	Send(*MedicalTest) error
+	grpc.ServerStream
+}
+
+type doctorServiceFetchOnIdParityServer struct {
+	grpc.ServerStream
+}
+
+func (x *doctorServiceFetchOnIdParityServer) Send(m *MedicalTest) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+var _DoctorService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "DoctorService",
+	HandlerType: (*DoctorServiceServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "FetchResults",
+			Handler:    _DoctorService_FetchResults_Handler,
+		},
+	},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "FetchAllResults",
+			Handler:       _DoctorService_FetchAllResults_Handler,
+			ServerStreams: true,
+		},
+		{
+			StreamName:    "FetchOnIdParity",
+			Handler:       _DoctorService_FetchOnIdParity_Handler,
+			ServerStreams: true,
+		},
+	},
+	Metadata: "medical_test.proto",
+}
+
+// Client API for TechnicianService service
+
+type TechnicianServiceClient interface {
+	AddResults(ctx context.Context, in *NewMedTestRequest, opts ...grpc.CallOption) (*Status, error)
+}
+
+type technicianServiceClient struct {
+	cc *grpc.ClientConn
+}
+
+func NewTechnicianServiceClient(cc *grpc.ClientConn) TechnicianServiceClient {
+	return &technicianServiceClient{cc}
+}
+
+func (c *technicianServiceClient) AddResults(ctx context.Context, in *NewMedTestRequest, opts ...grpc.CallOption) (*Status, error) {
+	out := new(Status)
+	err := grpc.Invoke(ctx, "/TechnicianService/AddResults", in, out, c.cc, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+// Server API for TechnicianService service
+
+type TechnicianServiceServer interface {
+	AddResults(context.Context, *NewMedTestRequest) (*Status, error)
+}
+
+func RegisterTechnicianServiceServer(s *grpc.Server, srv TechnicianServiceServer) {
+	s.RegisterService(&_TechnicianService_serviceDesc, srv)
+}
+
+func _TechnicianService_AddResults_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(NewMedTestRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(TechnicianServiceServer).AddResults(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/TechnicianService/AddResults",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(TechnicianServiceServer).AddResults(ctx, req.(*NewMedTestRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+var _TechnicianService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "TechnicianService",
+	HandlerType: (*TechnicianServiceServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "AddResults",
+			Handler:    _TechnicianService_AddResults_Handler,
+		},
+	},
+	Streams:  []grpc.StreamDesc{},
+	Metadata: "medical_test.proto",
+}
+
+// Client API for DbService service
+
+type DbServiceClient interface {
+	NewPatient(ctx context.Context, in *Person, opts ...grpc.CallOption) (*Patient, error)
+	NewDoctor(ctx context.Context, in *Person, opts ...grpc.CallOption) (*Doctor, error)
+	NewTechnician(ctx context.Context, in *Person, opts ...grpc.CallOption) (*Technician, error)
+	FetchPatients(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DbService_FetchPatientsClient, error)
+	FetchDoctors(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DbService_FetchDoctorsClient, error)
+	FetchTechnicians(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DbService_FetchTechniciansClient, error)
+}
+
+type dbServiceClient struct {
+	cc *grpc.ClientConn
+}
+
+func NewDbServiceClient(cc *grpc.ClientConn) DbServiceClient {
+	return &dbServiceClient{cc}
+}
+
+func (c *dbServiceClient) NewPatient(ctx context.Context, in *Person, opts ...grpc.CallOption) (*Patient, error) {
+	out := new(Patient)
+	err := grpc.Invoke(ctx, "/DbService/NewPatient", in, out, c.cc, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *dbServiceClient) NewDoctor(ctx context.Context, in *Person, opts ...grpc.CallOption) (*Doctor, error) {
+	out := new(Doctor)
+	err := grpc.Invoke(ctx, "/DbService/NewDoctor", in, out, c.cc, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *dbServiceClient) NewTechnician(ctx context.Context, in *Person, opts ...grpc.CallOption) (*Technician, error) {
+	out := new(Technician)
+	err := grpc.Invoke(ctx, "/DbService/NewTechnician", in, out, c.cc, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *dbServiceClient) FetchPatients(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DbService_FetchPatientsClient, error) {
+	stream, err := grpc.NewClientStream(ctx, &_DbService_serviceDesc.Streams[0], c.cc, "/DbService/FetchPatients", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &dbServiceFetchPatientsClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type DbService_FetchPatientsClient interface {
+	Recv() (*Patient, error)
+	grpc.ClientStream
+}
+
+type dbServiceFetchPatientsClient struct {
+	grpc.ClientStream
+}
+
+func (x *dbServiceFetchPatientsClient) Recv() (*Patient, error) {
+	m := new(Patient)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func (c *dbServiceClient) FetchDoctors(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DbService_FetchDoctorsClient, error) {
+	stream, err := grpc.NewClientStream(ctx, &_DbService_serviceDesc.Streams[1], c.cc, "/DbService/FetchDoctors", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &dbServiceFetchDoctorsClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type DbService_FetchDoctorsClient interface {
+	Recv() (*Doctor, error)
+	grpc.ClientStream
+}
+
+type dbServiceFetchDoctorsClient struct {
+	grpc.ClientStream
+}
+
+func (x *dbServiceFetchDoctorsClient) Recv() (*Doctor, error) {
+	m := new(Doctor)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func (c *dbServiceClient) FetchTechnicians(ctx context.Context, in *Empty, opts ...grpc.CallOption) (DbService_FetchTechniciansClient, error) {
+	stream, err := grpc.NewClientStream(ctx, &_DbService_serviceDesc.Streams[2], c.cc, "/DbService/FetchTechnicians", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &dbServiceFetchTechniciansClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type DbService_FetchTechniciansClient interface {
+	Recv() (*Technician, error)
+	grpc.ClientStream
+}
+
+type dbServiceFetchTechniciansClient struct {
+	grpc.ClientStream
+}
+
+func (x *dbServiceFetchTechniciansClient) Recv() (*Technician, error) {
+	m := new(Technician)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+// Server API for DbService service
+
+type DbServiceServer interface {
+	NewPatient(context.Context, *Person) (*Patient, error)
+	NewDoctor(context.Context, *Person) (*Doctor, error)
+	NewTechnician(context.Context, *Person) (*Technician, error)
+	FetchPatients(*Empty, DbService_FetchPatientsServer) error
+	FetchDoctors(*Empty, DbService_FetchDoctorsServer) error
+	FetchTechnicians(*Empty, DbService_FetchTechniciansServer) error
+}
+
+func RegisterDbServiceServer(s *grpc.Server, srv DbServiceServer) {
+	s.RegisterService(&_DbService_serviceDesc, srv)
+}
+
+func _DbService_NewPatient_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Person)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DbServiceServer).NewPatient(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/DbService/NewPatient",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DbServiceServer).NewPatient(ctx, req.(*Person))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _DbService_NewDoctor_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Person)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DbServiceServer).NewDoctor(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/DbService/NewDoctor",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DbServiceServer).NewDoctor(ctx, req.(*Person))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _DbService_NewTechnician_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Person)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DbServiceServer).NewTechnician(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/DbService/NewTechnician",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DbServiceServer).NewTechnician(ctx, req.(*Person))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _DbService_FetchPatients_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(Empty)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(DbServiceServer).FetchPatients(m, &dbServiceFetchPatientsServer{stream})
+}
+
+type DbService_FetchPatientsServer interface {
+	Send(*Patient) error
+	grpc.ServerStream
+}
+
+type dbServiceFetchPatientsServer struct {
+	grpc.ServerStream
+}
+
+func (x *dbServiceFetchPatientsServer) Send(m *Patient) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func _DbService_FetchDoctors_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(Empty)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(DbServiceServer).FetchDoctors(m, &dbServiceFetchDoctorsServer{stream})
+}
+
+type DbService_FetchDoctorsServer interface {
+	Send(*Doctor) error
+	grpc.ServerStream
+}
+
+type dbServiceFetchDoctorsServer struct {
+	grpc.ServerStream
+}
+
+func (x *dbServiceFetchDoctorsServer) Send(m *Doctor) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func _DbService_FetchTechnicians_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(Empty)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(DbServiceServer).FetchTechnicians(m, &dbServiceFetchTechniciansServer{stream})
+}
+
+type DbService_FetchTechniciansServer interface {
+	Send(*Technician) error
+	grpc.ServerStream
+}
+
+type dbServiceFetchTechniciansServer struct {
+	grpc.ServerStream
+}
+
+func (x *dbServiceFetchTechniciansServer) Send(m *Technician) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+var _DbService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "DbService",
+	HandlerType: (*DbServiceServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "NewPatient",
+			Handler:    _DbService_NewPatient_Handler,
+		},
+		{
+			MethodName: "NewDoctor",
+			Handler:    _DbService_NewDoctor_Handler,
+		},
+		{
+			MethodName: "NewTechnician",
+			Handler:    _DbService_NewTechnician_Handler,
+		},
+	},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "FetchPatients",
+			Handler:       _DbService_FetchPatients_Handler,
+			ServerStreams: true,
+		},
+		{
+			StreamName:    "FetchDoctors",
+			Handler:       _DbService_FetchDoctors_Handler,
+			ServerStreams: true,
+		},
+		{
+			StreamName:    "FetchTechnicians",
+			Handler:       _DbService_FetchTechnicians_Handler,
+			ServerStreams: true,
+		},
+	},
+	Metadata: "medical_test.proto",
 }
 
 func init() { proto.RegisterFile("medical_test.proto", fileDescriptor0) }
 
 var fileDescriptor0 = []byte{
-	// 583 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x54, 0x5f, 0x6b, 0x1a, 0x4f,
-	0x14, 0x75, 0xdd, 0xe8, 0xea, 0xd5, 0x18, 0x33, 0x84, 0xb0, 0x3f, 0x7f, 0x81, 0xda, 0xc1, 0x07,
-	0x23, 0xb2, 0x84, 0x15, 0x8a, 0xe4, 0xa5, 0x58, 0x52, 0xc1, 0x87, 0x42, 0x98, 0x04, 0xfa, 0x58,
-	0xb6, 0x3b, 0x53, 0x5c, 0xba, 0xd9, 0x35, 0x3b, 0x63, 0xc0, 0xcf, 0xd2, 0xaf, 0xd5, 0xaf, 0x53,
-	0x28, 0xce, 0x9f, 0x75, 0xd4, 0x40, 0x9e, 0xfa, 0x76, 0x67, 0xce, 0xb9, 0xf7, 0x9e, 0x7b, 0xf6,
-	0xce, 0x02, 0x7a, 0x62, 0x34, 0x89, 0xa3, 0xf4, 0x9b, 0x60, 0x5c, 0x04, 0xab, 0x22, 0x17, 0x39,
-	0x1e, 0x43, 0xfd, 0x9e, 0x15, 0x3c, 0xcf, 0x50, 0x07, 0xaa, 0x09, 0xf5, 0x9d, 0xbe, 0x33, 0x74,
-	0x49, 0x35, 0xa1, 0x08, 0xc1, 0x49, 0x16, 0x3d, 0x31, 0xbf, 0xda, 0x77, 0x86, 0x4d, 0x22, 0x63,
-	0x3c, 0x02, 0xef, 0x3e, 0x12, 0x09, 0xcb, 0x04, 0x7a, 0x07, 0xf5, 0x95, 0x4c, 0x94, 0x29, 0xad,
-	0xd0, 0x0b, 0x54, 0x1d, 0xa2, 0xaf, 0xf1, 0x0d, 0x34, 0x34, 0x97, 0xa3, 0x01, 0x34, 0x56, 0x3a,
-	0xf6, 0x9d, 0xbe, 0x3b, 0x6c, 0x85, 0x8d, 0x40, 0x83, 0xa4, 0x44, 0xf0, 0x35, 0xd4, 0xef, 0xf2,
-	0x58, 0xe4, 0xc5, 0xdb, 0xc5, 0xc7, 0xe0, 0x29, 0x2a, 0x47, 0xef, 0xc1, 0xa3, 0x2a, 0xd4, 0xa5,
-	0xbd, 0x40, 0x41, 0xc4, 0xdc, 0xe3, 0x31, 0x34, 0x1f, 0x59, 0xbc, 0xcc, 0x92, 0x38, 0xca, 0xde,
-	0xae, 0x3d, 0x05, 0x28, 0xd9, 0x1c, 0x8d, 0x00, 0x44, 0x79, 0xd2, 0x1d, 0x20, 0x28, 0x09, 0xc4,
-	0x42, 0xf1, 0x1f, 0x07, 0x5a, 0x5f, 0x94, 0xc7, 0x8f, 0x8c, 0x8b, 0x23, 0x4b, 0x31, 0x78, 0x7a,
-	0x58, 0xe9, 0xaa, 0xed, 0x82, 0x01, 0xb6, 0xf2, 0x94, 0x6c, 0xdf, 0xd5, 0xf2, 0xf4, 0x34, 0xfa,
-	0x1a, 0x0d, 0xa1, 0x59, 0xb6, 0xf4, 0x4f, 0x24, 0xc7, 0xd6, 0xb3, 0x03, 0xd1, 0x04, 0xbc, 0x82,
-	0xf1, 0x75, 0x2a, 0xb8, 0x5f, 0x93, 0xba, 0xff, 0x0b, 0x2c, 0x75, 0x01, 0x51, 0xd8, 0xe7, 0x4c,
-	0x14, 0x1b, 0x62, 0x98, 0xbd, 0x5b, 0x68, 0xdb, 0x00, 0xea, 0x82, 0xfb, 0x93, 0x6d, 0xe4, 0x10,
-	0x4d, 0xb2, 0x0d, 0xd1, 0x05, 0xd4, 0x5e, 0xa2, 0x74, 0x6d, 0x36, 0x43, 0x1d, 0x6e, 0xab, 0x53,
-	0x07, 0x87, 0xd0, 0xb6, 0x1a, 0x70, 0x84, 0xa1, 0xb6, 0x5d, 0x35, 0x63, 0x5b, 0xdb, 0x6e, 0x4f,
-	0x14, 0x84, 0x7f, 0x3b, 0xd0, 0x99, 0x51, 0x6a, 0xdb, 0x76, 0x59, 0x5a, 0xa0, 0xac, 0x33, 0x93,
-	0xfb, 0xfb, 0xf6, 0xb9, 0x3b, 0xd3, 0xae, 0x6c, 0x4f, 0x5c, 0x89, 0x59, 0x3e, 0x7c, 0xd8, 0xf9,
-	0x70, 0x22, 0x85, 0x5c, 0x05, 0xfb, 0x1d, 0xff, 0x81, 0x15, 0x1f, 0xe1, 0x7c, 0x9e, 0xa4, 0x82,
-	0x15, 0x9f, 0x36, 0x0b, 0x4a, 0xd8, 0xf3, 0xfa, 0xb5, 0x7d, 0xe8, 0x41, 0xe3, 0x87, 0x24, 0x2d,
-	0xa8, 0x9e, 0xa8, 0x3c, 0xe3, 0x0b, 0xa8, 0x2e, 0xe8, 0x61, 0x06, 0xee, 0x43, 0xfd, 0x41, 0x44,
-	0x62, 0xcd, 0xb7, 0x26, 0x71, 0x19, 0x69, 0x3d, 0xfa, 0x14, 0x46, 0xd0, 0xd1, 0x3b, 0xf5, 0xc0,
-	0x8a, 0x97, 0x24, 0x66, 0xe8, 0x1a, 0xce, 0xe6, 0x4c, 0xc4, 0xcb, 0x59, 0x9a, 0xea, 0x71, 0x90,
-	0x1b, 0x2c, 0x68, 0xef, 0xd4, 0xfe, 0x1c, 0x1c, 0x57, 0x6e, 0x1c, 0x34, 0x80, 0x73, 0x49, 0x55,
-	0x2f, 0x22, 0x4a, 0xef, 0x22, 0x11, 0x29, 0x72, 0xb9, 0xa9, 0xb8, 0x12, 0xfe, 0x72, 0xe0, 0x54,
-	0x2d, 0xa5, 0x69, 0x31, 0x80, 0xae, 0x69, 0x51, 0xbe, 0x79, 0x99, 0xd6, 0x34, 0x69, 0x1c, 0x57,
-	0xd0, 0x08, 0x2e, 0x55, 0x75, 0x7d, 0x35, 0xcf, 0x0b, 0xfd, 0xde, 0x8f, 0xb9, 0x53, 0x40, 0x92,
-	0xab, 0x15, 0x7f, 0x4d, 0xc4, 0x72, 0x41, 0x11, 0x0a, 0x8e, 0x4c, 0xed, 0xed, 0x6d, 0x15, 0xae,
-	0x84, 0xcf, 0xd0, 0x2d, 0x5f, 0x83, 0xd1, 0x37, 0x04, 0x98, 0x51, 0x6a, 0xa6, 0x3f, 0x3b, 0xf8,
-	0xfc, 0x3d, 0x2f, 0x50, 0xa6, 0xe2, 0x0a, 0x9a, 0xc0, 0xff, 0x07, 0x66, 0xcd, 0xf3, 0x62, 0xf7,
-	0xf3, 0x78, 0xd5, 0xb8, 0xef, 0x75, 0xf9, 0x2f, 0x9d, 0xfc, 0x0d, 0x00, 0x00, 0xff, 0xff, 0x17,
-	0xaf, 0x52, 0x7a, 0x61, 0x05, 0x00, 0x00,
+	// 564 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x54, 0xcf, 0x6e, 0xd3, 0x30,
+	0x18, 0x6f, 0x92, 0x36, 0x59, 0xbf, 0xb6, 0x63, 0xb3, 0x26, 0x14, 0x7a, 0xa0, 0xc5, 0x08, 0x28,
+	0x14, 0xac, 0x2a, 0xbb, 0x40, 0x4f, 0x4c, 0x5a, 0x27, 0xf5, 0xb0, 0x52, 0x79, 0xbb, 0xa3, 0x2c,
+	0xb6, 0xb4, 0x88, 0x34, 0x2d, 0x89, 0xdb, 0xaa, 0x37, 0x5e, 0x82, 0xb7, 0xe3, 0x25, 0x78, 0x03,
+	0x14, 0xc7, 0x69, 0x5c, 0x82, 0xd8, 0x69, 0x37, 0x3b, 0xdf, 0xef, 0xf3, 0xef, 0x8f, 0xfd, 0x05,
+	0xd0, 0x82, 0xb3, 0x30, 0xf0, 0xa3, 0xaf, 0x82, 0xa7, 0x82, 0xac, 0x92, 0xa5, 0x58, 0xe2, 0xf7,
+	0x60, 0xcf, 0x79, 0x92, 0x2e, 0x63, 0x74, 0x0c, 0x66, 0xc8, 0x5c, 0xa3, 0x6f, 0x0c, 0x2c, 0x6a,
+	0x86, 0x0c, 0x21, 0xa8, 0xc7, 0xfe, 0x82, 0xbb, 0x66, 0xdf, 0x18, 0x34, 0xa9, 0x5c, 0xe3, 0x77,
+	0xe0, 0xcc, 0x7d, 0x11, 0xf2, 0x58, 0xa0, 0x1e, 0xd8, 0x2b, 0xd9, 0x28, 0x5b, 0x5a, 0x9e, 0x43,
+	0xf2, 0x73, 0xa8, 0xfa, 0x8c, 0xdf, 0x82, 0x7d, 0xb9, 0x0c, 0xc4, 0x32, 0x79, 0x18, 0xfa, 0x01,
+	0xe0, 0x96, 0x07, 0xf7, 0x71, 0x18, 0x84, 0x7e, 0xfc, 0x30, 0xfc, 0x87, 0x09, 0xad, 0xeb, 0xdc,
+	0xca, 0x2d, 0x4f, 0x45, 0x45, 0x39, 0x06, 0x67, 0x95, 0xab, 0x94, 0xe2, 0x5b, 0xde, 0x11, 0x51,
+	0xaa, 0x69, 0x51, 0xc8, 0x48, 0x98, 0x54, 0xe7, 0x5a, 0x8a, 0x24, 0x17, 0x4b, 0xd5, 0x67, 0x34,
+	0x04, 0x10, 0x7b, 0x4d, 0x6e, 0x5d, 0x82, 0x5a, 0xa4, 0x94, 0x49, 0xb5, 0x32, 0x3a, 0x07, 0x27,
+	0xe1, 0xe9, 0x3a, 0x12, 0xa9, 0xdb, 0xe8, 0x5b, 0x83, 0x96, 0xf7, 0x8c, 0x68, 0x02, 0x09, 0xcd,
+	0x6b, 0x93, 0x58, 0x24, 0x3b, 0x5a, 0x20, 0xbb, 0x63, 0x68, 0xeb, 0x05, 0x74, 0x02, 0xd6, 0x37,
+	0xbe, 0x93, 0x3e, 0x9a, 0x34, 0x5b, 0xa2, 0x33, 0x68, 0x6c, 0xfc, 0x68, 0x5d, 0xdc, 0x41, 0xbe,
+	0x19, 0x9b, 0x1f, 0x0d, 0xfc, 0xcb, 0x80, 0xd3, 0x19, 0xdf, 0x5e, 0x73, 0x96, 0x11, 0x50, 0xfe,
+	0x7d, 0x9d, 0x05, 0xf1, 0x74, 0x6f, 0x2a, 0x0f, 0xa3, 0xf0, 0xe2, 0x1e, 0x06, 0x62, 0x95, 0x31,
+	0x3c, 0x3f, 0x70, 0x69, 0xc9, 0xa2, 0x6e, 0xec, 0x53, 0x69, 0xac, 0x2e, 0x8d, 0xf5, 0x48, 0x85,
+	0xf6, 0x11, 0xec, 0xbd, 0x86, 0xf6, 0x55, 0x18, 0x09, 0x9e, 0x4c, 0x36, 0x3c, 0x9e, 0xb2, 0xcc,
+	0x58, 0x98, 0x66, 0x6b, 0xd9, 0x7e, 0x44, 0xd5, 0x0e, 0x9f, 0x81, 0x39, 0x65, 0x7f, 0xdf, 0x3f,
+	0xee, 0x83, 0x7d, 0x23, 0x7c, 0xb1, 0x4e, 0xb3, 0xbe, 0x54, 0xae, 0x14, 0xad, 0xda, 0x61, 0x07,
+	0x1a, 0x93, 0xc5, 0x4a, 0xec, 0xbc, 0x31, 0x1c, 0xab, 0xa7, 0x71, 0xc3, 0x93, 0x4d, 0x18, 0x70,
+	0x34, 0x80, 0x27, 0x57, 0x5c, 0x04, 0xf7, 0x17, 0x51, 0xa4, 0xe4, 0x23, 0x8b, 0x4c, 0x59, 0xb7,
+	0xad, 0xdf, 0x28, 0xae, 0x8d, 0x0c, 0xef, 0xa7, 0x01, 0x9d, 0xfc, 0xd1, 0x14, 0xbd, 0xc3, 0x6a,
+	0xaf, 0x4d, 0x24, 0x51, 0xb5, 0x1d, 0xbd, 0x84, 0xb6, 0x04, 0xff, 0x8f, 0x05, 0x79, 0xea, 0xc4,
+	0x2f, 0xf1, 0x94, 0xcd, 0xfd, 0x24, 0x14, 0x3b, 0xd4, 0x21, 0x7a, 0x34, 0xff, 0xd0, 0xf5, 0x19,
+	0x4e, 0xcb, 0x67, 0x5a, 0x4a, 0x83, 0x0b, 0xc6, 0x0a, 0x2e, 0x54, 0xbd, 0xc5, 0xae, 0x43, 0xf2,
+	0xd0, 0x70, 0xcd, 0xfb, 0x6d, 0x40, 0xf3, 0xf2, 0xae, 0x68, 0x7d, 0x01, 0x30, 0xe3, 0xdb, 0x62,
+	0xee, 0x8b, 0x69, 0xec, 0xee, 0x87, 0x0a, 0xd7, 0x50, 0x0f, 0x9a, 0x33, 0xbe, 0x55, 0xe3, 0xbe,
+	0x47, 0x14, 0x33, 0x85, 0x6b, 0xe8, 0x0d, 0x74, 0x66, 0x7c, 0xab, 0x0d, 0xf9, 0x1e, 0xa4, 0xcf,
+	0x14, 0xae, 0xa1, 0x57, 0xd0, 0x91, 0x86, 0xd5, 0xd9, 0x65, 0x80, 0x1a, 0x9d, 0x16, 0x5e, 0x4e,
+	0x50, 0xa2, 0x4a, 0xca, 0x91, 0x81, 0x86, 0x70, 0x22, 0x41, 0x25, 0x41, 0x09, 0x3c, 0xa4, 0x1d,
+	0x19, 0x77, 0xb6, 0xfc, 0x1f, 0x9e, 0xff, 0x09, 0x00, 0x00, 0xff, 0xff, 0x59, 0xad, 0xdd, 0xc2,
+	0x25, 0x05, 0x00, 0x00,
 }
