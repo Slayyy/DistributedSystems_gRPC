@@ -1,0 +1,85 @@
+syntax = "proto3";
+
+
+message Person {
+  int64 id = 1;
+  string name = 2;
+}
+
+message Patient {
+  Person person = 1;
+}
+message Patients {
+  repeated Patient patients = 1;
+}
+
+message Doctor {
+  Person person = 1;
+}
+
+message Doctors {
+  repeated Doctor doctors = 1;
+}
+
+message Technican {
+  Person person = 1;
+}
+
+message Technicans {
+  repeated Technican technicans = 1;
+}
+
+message MedicalTest {
+  int64 id = 1;
+  Patient patient = 2;
+  Doctor doctor = 3;
+  Technican technican = 4;
+  map<string, string> results = 5;
+}
+
+message MedicalTests {
+  repeated MedicalTest tests = 1;
+}
+
+message AddMedicalTest {
+  int64 doctor = 1;
+  int64 patient = 2;
+  int64 technican = 3;
+  map<string, string> results = 4;
+}
+
+
+message FilterByIdRequest {
+  int64 id = 1;
+  int64 filterId = 2;
+}
+
+message Id {
+  int64 id = 1;
+}
+
+message Status {
+  string status = 1;
+}
+
+service PatientService {
+  rpc FetchAllResults (Id) returns (stream MedicalTests) {};
+  rpc FetchPersonalData (Id) returns (Patient) {};
+}
+
+service DoctorService {
+  rpc FetchAllPatients (Id) returns (Patients) {};
+  rpc FetchPatientsForDoctor (Id) returns (Patients) {};
+  rpc FetchResultsWithId (FilterByIdRequest) returns (MedicalTest) {};
+}
+
+service TechnicanService {
+  rpc AddResults (AddMedicalTest) returns (Status) {};
+  rpc FetchAllResultsForTechnican (Id) returns (MedicalTests) {};
+}
+
+//service PublicService {
+//  rpc FetchAllDoctors (Id) returns (Doctors) {};
+//  rpc FetchAllTechnicans (Id) returns (Technicans) {};
+//}
+
